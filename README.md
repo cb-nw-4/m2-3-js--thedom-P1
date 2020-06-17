@@ -43,7 +43,7 @@ By the end of this exercise, you will have a track, a stable of frogs that you c
 
 We are going to need to target each lane separately at some point in our program. So let's give each lane its own `id` as well.
 
-4. Assign each lane an `id` following the this pattern: `lane-<LANE_NUMBER>`. e.g. `lane-1`, `lane-2`, `lane-3`, etc.
+4. Assign each lane an `id` following the this pattern: `lane-<LANE_NUMBER>`. e.g. `lane-1`, `lane-2`, `lane-3`.
 5. If you preview the page, you should now see an ordered list, with the lane number as its only value.
 
 ### Exercise 2.2 - Call in the frogs!
@@ -59,7 +59,7 @@ We need to add our stable of frogs to the app. You will find a file called `frog
 
 We need to assign each frog to a lane.
 
-1. Use the racers array to assign each frog to a lane.
+1. Use the racers array to assign each frog to a lane. (_would a loop be useful here?_)
 2. We should also show the name/number of the frog in the lane. (This will involve creating at least one element inside the lane `li`)
 3. Add a class of `frog` to each of the frogs so that we can style them later.
 4. Let's also temporarily set the background color of the frog element to the color assigned to it in its object.
