@@ -1,4 +1,18 @@
-# JavaScript - The DOM
+# JavaScript - The DOM - P1
+
+## Setup
+
+```
+yarn install
+```
+
+## Fundamentals
+
+Starting today, there is a fundamentals section in the workshop. Start by completing this section before moving on to the following exercises.
+
+See the [README.md](./workshop/_fundamentals/README.md) for more information.
+
+---
 
 ## Exercise 1 - Creating DOM Nodes
 
@@ -16,7 +30,7 @@ In the exercise-1 folder, there are the following files.
 
 Create the content of a webpage entirely with Javascript.
 
-1. Recreate the content structure from `example.html` in enclosed `exercise.html`.
+1. Recreate the content structure from `example.html`.
 2. To do this, **you are not allowed to modify any of the HTML files**, only `scripts.js` should be modified.
 3. Once you've completed this, compare `example.html` and your `exercise.html` file using "Live Preview", you will notice that they look nothing alike.
 4. Add code to the `scripts.js` that will add a `<link>` to the `styles.css` in the `<head>` of `exercise.html`.
