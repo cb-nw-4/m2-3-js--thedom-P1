@@ -5,7 +5,9 @@ const firstLetter = require("../fundamentals-3.1");
 test("Exercise 1", function () {
   expect(firstLetter("max")).toBe("m");
   expect(firstLetter("")).toBe(undefined);
-  // add more tests here...
+  expect(firstLetter("skate")).toBe("s");
+  expect(firstLetter("book")).toBe("b");
+  expect(firstLetter("cat")).toBe("c");
 });
 
 // Run your test by typing yarn test fundamentals-3.1 in the terminal.
