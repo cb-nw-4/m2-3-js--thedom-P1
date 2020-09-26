@@ -9,9 +9,15 @@
 
 function firstLetter(str) {
   array = str.split("");
+  if (array === "") {
+    return undefined;
+  } else {
   return array[0]
+  }
 }
 console.log(firstLetter("Gia"));
+console.log(firstLetter("bootcamp"));
+console.log(firstLetter(""));
 
 // Part 2 - Test
 // --------------

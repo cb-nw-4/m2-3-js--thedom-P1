@@ -10,7 +10,14 @@
 
 function lastCharacter(str) {
   // Your code here
-}
+  array = str.split("")
+  return array[array.length -1]
+  }
+
+console.log(lastCharacter("Gia"));
+console.log(lastCharacter("bootcamp"));
+console.log(lastCharacter(""));
+
 
 // Part 2 - Test
 // --------------
