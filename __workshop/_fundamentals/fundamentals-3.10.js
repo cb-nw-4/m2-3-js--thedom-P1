@@ -8,7 +8,20 @@
 // e.g. f("BACON BROCOLI"); // Bacon Brocoli
 
 function makeIntoTitle(sentence) {
-  // Your code here
+  let arr = sentence.split("");
+  let newarr = [];
+  
+
+  newarr = arr.map((word,i) => {
+    if (arr[i-1] === " ") return arr[i].toUpperCase();
+    else return arr[i].toLowerCase();
+  })
+    // for (i=1;i<arr.length;i++){
+    //   if (arr[i-1] === " ") newarr[i] = arr[i].toUpperCase();
+    //   else newarr[i] = arr[i].toLowerCase();
+    // }
+  newarr[0] = arr[0].toUpperCase();
+  return newarr.join("");
 }
 
 // Part 2 - Test

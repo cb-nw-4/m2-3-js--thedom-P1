@@ -8,7 +8,8 @@
 // - If it's an empty string (''), return undefined.
 
 function firstLetter(str) {
-  // Your code here
+  let array = str.split("");
+  return array[0];
 }
 
 // Part 2 - Test

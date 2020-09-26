@@ -10,6 +10,14 @@
 // - If there is no letter in the provided index, return undefined.
 
 function getLetterAtIndex(str, index) {
+    if (typeof str === "string") {
+      let arr = str.split("");
+      if (typeof arr[index] === "string") return arr[index];
+      else return undefined;
+    }
+    else return undefined;
+
+
   // Your code here
 }
 

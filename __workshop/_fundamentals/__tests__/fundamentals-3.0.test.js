@@ -7,9 +7,13 @@ test("Exercise 0", function () {
   // add more tests here...
   expect(strLength("abcdefghijklmnop")).toBe(16);
   expect(strLength("This is a test case.")).toBe(20);
+  expect(strLength("abc")).toBe(3);
+  expect(strLength("abcde")).toBe(5);
+  expect(strLength("abcdefg")).toBe(7);
   expect(strLength("")).toBe(undefined);
   expect(strLength(256)).toBe(undefined);
   expect(strLength(["abcdefghijklmnop"])).toBe(undefined);
+
 });
 
 // Run your test by typing yarn test fundamentals-3.1 in the terminal.
