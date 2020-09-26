@@ -9,7 +9,18 @@
 
 function sum(arr) {
   // Your code here
+  if(Array.isArray(arr) === false){
+    return undefined
+  }
+  else {
+    const total = arr.reduce((accum, curr) => {
+      return accum + curr
+    })
+    return total
 }
+}
+
+
 
 // Part 2 - Test
 // --------------
