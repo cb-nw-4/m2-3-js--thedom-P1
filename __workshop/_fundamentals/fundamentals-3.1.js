@@ -8,8 +8,10 @@
 // - If it's an empty string (''), return undefined.
 
 function firstLetter(str) {
-  // Your code here
+  array = str.split("");
+  return array[0]
 }
+console.log(firstLetter("Gia"));
 
 // Part 2 - Test
 // --------------

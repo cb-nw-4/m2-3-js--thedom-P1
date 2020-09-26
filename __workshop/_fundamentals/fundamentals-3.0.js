@@ -15,6 +15,8 @@ function strLength(str) {
   return str.length;
 }
 
+console.log(strLength("Longer"));
+
 // Part 2 - Test
 // --------------
 // Test your function.
