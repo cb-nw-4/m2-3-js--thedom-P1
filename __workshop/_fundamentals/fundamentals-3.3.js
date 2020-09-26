@@ -12,6 +12,7 @@
 
 function sum(arr) {
   // Your code here
+  
 }
 
 // Part 2 - Test
