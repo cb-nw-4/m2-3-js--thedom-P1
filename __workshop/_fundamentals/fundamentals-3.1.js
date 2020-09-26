@@ -9,7 +9,7 @@
 
 function firstLetter(str) {
   // Your code here
-  if (typeof str !== "string" || str.length === 0) {
+  if (str.length === 0) {
     return undefined;
   }
   return str[0];
