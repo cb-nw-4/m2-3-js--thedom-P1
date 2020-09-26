@@ -9,8 +9,16 @@
 
 function makeIntoTitle(sentence) {
   // Your code here
+  let splitArr = sentence.split(" ");
+  let capitalizedArr = splitArr.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+  let finalArray = capitalizedArr.join(" ");
+  return finalArray;
 }
-
+console.log(makeIntoTitle("a bb ccc dddd e ff ggg"));
+console.log(makeIntoTitle("this is a test title"));
+console.log(makeIntoTitle("parks and recreation"));
+console.log(makeIntoTitle("rick and morty"));
+console.log(makeIntoTitle("bob's burgers"));
 // Part 2 - Test
 // --------------
 // Test your function.
