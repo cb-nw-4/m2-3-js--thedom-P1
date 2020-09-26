@@ -12,8 +12,20 @@
 
 function sum(arr) {
   // Your code here
+  let sum = 0;
+  if (arr.length > 2 || arr.length < 2) {
+      return undefined;
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] == "number") {
+      sum += arr[i];
+    } else {
+      return undefined;
+    }
+  }
+  return sum;
 }
-
+  console.log(sum([8, 20]))
 // Part 2 - Test
 // --------------
 // Test your function.
