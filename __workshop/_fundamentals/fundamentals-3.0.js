@@ -1,5 +1,5 @@
 // Exercise 0
-//
+// COMPLETE
 // Part 1 - Write
 // ---------------
 // Write a function accepts a string as an argument and returns the number of letters in that string
