@@ -11,6 +11,12 @@
 
 function getLetterAtIndex(str, index) {
   // Your code here
+  if (typeof str !== 'string' || str.length < 1){
+    return undefined
+  }
+  else {
+    return str.slice(index, index+1)
+  }
 }
 
 // Part 2 - Test

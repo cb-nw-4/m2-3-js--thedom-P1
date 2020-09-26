@@ -5,8 +5,21 @@
 // Write a function that accepts a string and returns the string, reversed.
 // For example "hello" would return "olleh" and "how are you" would return "uoy era woh".
 
+
+
+
+
 function reverseIt(str) {
   // Your code here
+  if (typeof str !== 'string'){
+    return undefined
+  }
+  else {
+    let splitStr = str.split('')
+    let revStr = splitStr.reverse()
+    let joinStr = revStr.join('')
+    return joinStr
+  }
 }
 
 // Part 2 - Test

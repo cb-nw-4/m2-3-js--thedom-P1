@@ -9,7 +9,20 @@
 
 function makeIntoTitle(sentence) {
   // Your code here
+  const splitStr = sentence.split(' ')
+
+  const toUpper = splitStr.map(word => {
+    const firstLetter = word[0].toUpperCase()
+    // return firstWord
+    const restWord = word.slice(1)
+    const combined = firstLetter + restWord
+    return combined
+  })
+  const changeType = toUpper.join(' ')
+  return changeType
 }
+
+makeIntoTitle('hello from the other side')
 
 // Part 2 - Test
 // --------------

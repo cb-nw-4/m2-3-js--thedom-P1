@@ -16,7 +16,23 @@
 
 function longestWord(str) {
   // Place solution here
+  if (str.length < 1) {
+    return "";
+  } else {
+    const splitStr = str.split(" ");
+
+    const biggestWord = splitStr.reduce((longest, currentWord) => {
+      if (currentWord.length > longest.length) {
+        return currentWord;
+      } else {
+        return longest;
+      }
+    }, "");
+    return biggestWord
+  }
 }
+
+longestWord("abcde askkkkkkkkk me");
 
 // Part 2 - Test
 // --------------
