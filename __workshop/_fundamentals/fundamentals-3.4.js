@@ -8,7 +8,14 @@
 // - If the array contains any values that are not a number, the function should return undefined.
 
 function sum(arr) {
-  // Your code here
+  let newArr = arr.filter ((element) => { 
+    return typeof element === "number"; 
+  });
+  if (arr.length === newArr.length) {
+    let sumNumbers= 0 ; 
+    arr.forEach((element)=> {sumNumbers += element; });
+    return sumNumbers; 
+  } else { return undefined; }; 
 }
 
 // Part 2 - Test

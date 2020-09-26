@@ -5,6 +5,13 @@ const sum = require("../fundamentals-3.3");
 test("Exercise 3", () => {
   expect(sum([3, 4])).toBe(7);
   // add more tests here...
+  expect(sum([3, 5])).toBe(8);
+  expect(sum([16, 4])).toBe(20);
+  expect(sum(["string", "anotherstring"])).toBe(undefined);
+  expect(sum([3, "string"])).toBe(undefined);
+  expect(sum(["string", 4])).toBe(undefined);
+  expect(sum([3, 4, 5])).toBe(undefined);
+  expect(sum([3, "String", 5])).toBe(undefined);
 });
 
 // Run your test by typing yarn test fundamentals-3.3 in the terminal.

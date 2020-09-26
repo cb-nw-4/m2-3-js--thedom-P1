@@ -21,7 +21,8 @@ e.g.
 // - If it's not a string, return undefined.
 
 const strLength = (str) => {
-  // Your code here
+  if (str.length ===0) return "undefined"; 
+  else return str.length; 
 };
 
 // Part 2 - Test
