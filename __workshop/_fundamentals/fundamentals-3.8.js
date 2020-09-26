@@ -7,6 +7,9 @@
 
 function reverseIt(str) {
   // Your code here
+  
+  let reversed = str.split("").reverse().join('')
+  return reversed;
 }
 
 // Part 2 - Test
