@@ -9,7 +9,7 @@ test("Exercise 4", () => {
   expect(sum([3])).toBe(3);
   expect(sum([3, "1", 5])).toBe(undefined);
   expect(sum(["c", "a", "b"])).toBe(undefined);
-  expect(sum([1, 6, 8])).toBe(15);
+  expect(sum([1, 6, 8, 1])).toBe(16);
   expect(sum([])).toBe(undefined);
   expect(sum(23)).toBe(undefined);
 
