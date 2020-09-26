@@ -5,6 +5,9 @@ const lastCharacter = require("../fundamentals-3.2");
 test("Exercise 2", () => {
   expect(lastCharacter("max")).toBe("x");
   expect(lastCharacter(23232)).toBe(undefined);
+  expect(lastCharacter("Once upon a time")).toBe("e");
+  expect(lastCharacter(2039489534)).toBe(undefined);
+  expect(lastCharacter("Bob's Burgers")).toBe("s");
   // add more tests here...
 });
 
