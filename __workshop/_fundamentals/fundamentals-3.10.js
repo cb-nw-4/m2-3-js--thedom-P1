@@ -9,6 +9,18 @@
 
 function makeIntoTitle(sentence) {
   // Your code here
+  if (typeof sentence !== "string") {
+    return undefined;
+  }
+
+  let wordArr = sentence.split(" ");
+  wordArr.forEach ((word, i) => {   
+   
+    if (word.length !== 0)
+      wordArr[i] = word.replace(word[0], word[0].toUpperCase());
+  });
+  
+  return wordArr.join(" ");
 }
 
 // Part 2 - Test
