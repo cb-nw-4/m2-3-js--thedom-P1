@@ -9,7 +9,11 @@
 // - If it's a number, return `undefined`
 
 function lastCharacter(str) {
-  // Your code here
+  if (str.length != 0 && typeof str === "string"){
+    return str.charAt(str.length-1);
+  } else {
+    return undefined;
+  }
 }
 
 // Part 2 - Test

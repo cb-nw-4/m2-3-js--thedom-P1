@@ -5,7 +5,9 @@ const lastCharacter = require("../fundamentals-3.2");
 test("Exercise 2", () => {
   expect(lastCharacter("max")).toBe("x");
   expect(lastCharacter(23232)).toBe(undefined);
-  // add more tests here...
+  expect(lastCharacter("kitty cat")).toBe("t");
+  expect(lastCharacter("")).toBe(undefined);
+  expect(lastCharacter("horse")).toBe("e");
 });
 
 // Run your test by typing yarn test fundamentals-3.2 in the terminal.
