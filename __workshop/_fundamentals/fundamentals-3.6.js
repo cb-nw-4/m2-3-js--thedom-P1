@@ -18,7 +18,32 @@
 // calculator(["add", 10, 20]); // 30
 
 function calculator(arr) {
-  // Your code here
+  let answer;
+  if (typeof arr !== "object" || arr.length !== 3) {
+    return undefined;
+  }
+  if (typeof arr[0] !== "string") {
+    return undefined;
+  }
+  if (typeof arr[1] !== "number" || typeof arr[2] !== "number") {
+    return undefined;
+  }
+  if (arr[0] === "add") {
+    answer = arr[1] + arr[2];
+  }
+  else if (arr[0] === "sub") {
+    answer = arr[1] - arr[2];
+  }
+  else if (arr[0] === "mul") {
+    answer = arr[1] * arr[2];
+  }
+  else if (arr[0] === "div") {
+    answer = arr[1] / arr[2];
+  }
+  else if (arr[0] !== "add" && arr[0] !== "sub" && arr[0] !== "mul" && arr[0] !== "div") {
+    return undefined;
+  }
+return answer;
 }
 
 // Part 2 - Test
