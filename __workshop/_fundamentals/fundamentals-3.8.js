@@ -6,7 +6,13 @@
 // For example "hello" would return "olleh" and "how are you" would return "uoy era woh".
 
 function reverseIt(str) {
-  // Your code here
+  let newString = '';
+
+  for (let x = str.length; x >= 0; x--) {
+    newString += str.charAt(x);
+  }
+
+  return newString;
 }
 
 // Part 2 - Test
