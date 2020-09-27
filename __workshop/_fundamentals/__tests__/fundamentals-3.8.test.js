@@ -8,6 +8,7 @@ test("Exercise 8", () => {
   expect(reverseIt("ittehgaps")).toBe("spaghetti");
   expect(reverseIt("aranobrac")).toBe("carbonara");
   expect(reverseIt("onicnorepep")).toBe("peperoncino");
+  expect(reverseIt(1899)).toBe(undefined);
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect
