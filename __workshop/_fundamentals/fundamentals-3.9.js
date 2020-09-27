@@ -15,7 +15,10 @@
 //  - `forEach` might be helpful
 
 function longestWord(str) {
-  if (str.isEmpty === true) {
+  if (typeof str !== "string") {
+    return undefined;
+  }
+  else if (str.isEmpty === true) {
     return "";
   }
 let arr = str.split(" ").reduce((a, b) => a.length <= b.length ? b : a);

@@ -8,6 +8,7 @@ test("Exercise 9", () => {
   expect(longestWord("a bbbb ccc dddd e ff gggg")).toBe("gggg");
   expect(longestWord("aaaa bbbb cccc dddd e ff ggg")).toBe("dddd");
   expect(longestWord("Hello, my name is Aya Sato.")).toBe("Hello,");
+  expect(longestWord(false)).toBe(undefined);
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect
