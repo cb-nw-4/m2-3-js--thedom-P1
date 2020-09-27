@@ -9,7 +9,7 @@
 
 function sum(arr) {
   // Your code here
-  if (arr.isArray === "false" && typeof arr[''] !== 'number') {
+  if (arr.isArray === "false" && typeof arr[' '] !== 'number') {
     return undefined;
   } else {
   let total = 0;
