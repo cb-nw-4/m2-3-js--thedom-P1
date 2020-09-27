@@ -10,7 +10,13 @@
 // - If there is no letter in the provided index, return undefined.
 
 function getLetterAtIndex(str, index) {
-  // Your code here
+  if (typeof str !== "string") {
+    return undefined;
+  }
+  else if (index > str.length) {
+    return undefined;
+  }
+  return str.slice(index).charAt(0);
 }
 
 // Part 2 - Test

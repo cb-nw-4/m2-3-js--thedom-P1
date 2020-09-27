@@ -7,6 +7,13 @@ test("Exercise 10", () => {
     "A Bb Ccc Dddd E Ff Ggg"
   );
   // add more tests here...
+  expect(makeIntoTitle("MY NAME IS AYA SATO.")).toBe(
+    "My Name Is Aya Sato."
+  );
+  expect(makeIntoTitle("to be, or not to be, that is the question")).toBe(
+    "To Be, Or Not To Be, That Is The Question"
+  );
+  expect(makeIntoTitle(9999)).toBe(undefined);
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect

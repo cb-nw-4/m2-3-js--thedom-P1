@@ -8,8 +8,11 @@
 // e.g. f("BACON BROCOLI"); // Bacon Brocoli
 
 function makeIntoTitle(sentence) {
-  // Your code here
-}
+  if (typeof sentence !== "string") {
+    return undefined;
+  }
+  return sentence.toLowerCase().split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+};
 
 // Part 2 - Test
 // --------------
