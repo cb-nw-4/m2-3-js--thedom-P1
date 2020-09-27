@@ -8,6 +8,7 @@ test("Exercise 2", () => {
   // add more tests here...
   expect(lastCharacter('')).toBe(undefined);
   expect(lastCharacter("Andy Warhol")).toBe("l");
+  expect(lastCharacter("YAYOI KUSAMA")).toBe("A");
 });
 
 // Run your test by typing yarn test fundamentals-3.2 in the terminal.
