@@ -8,7 +8,20 @@
 // - If the array contains any values that are not a number, the function should return undefined.
 
 function sum(arr) {
-  // Your code here
+
+    // Your code here
+    if (arr.every(element => typeof(element) === "number")) {
+        let total = 0;
+        for (let i = 0; i < arr.length; i++) {
+            total += arr[i];
+        }
+        return total
+    } else {
+        return undefined
+    }
+
+
+
 }
 
 // Part 2 - Test

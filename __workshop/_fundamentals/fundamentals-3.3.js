@@ -11,7 +11,11 @@
 // `typeof 3` returns 'number'
 
 function sum(arr) {
-  // Your code here
+    // Your code here
+
+    return (arr.every(element => typeof(element) == "number") && (arr.length == 2)) ?
+        (arr[0] + arr[1]) : (undefined);
+
 }
 
 // Part 2 - Test
