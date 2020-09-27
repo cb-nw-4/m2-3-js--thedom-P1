@@ -8,6 +8,9 @@
 // - If it's an empty string (''), return undefined.
 
 function firstLetter(str) {
+  if (typeof str !== "string") {
+    return undefined;
+  }
   if (str === '') {
     return undefined;
   }

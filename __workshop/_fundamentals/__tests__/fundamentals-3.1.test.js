@@ -9,6 +9,7 @@ test("Exercise 1", function () {
   expect(firstLetter("Aya")).toBe("A");
   expect(firstLetter("5388")).toBe("5");
   expect(firstLetter("boolean")).toBe("b");
+  expect(firstLetter(5388)).toBe(undefined);
 });
 
 // Run your test by typing yarn test fundamentals-3.1 in the terminal.
