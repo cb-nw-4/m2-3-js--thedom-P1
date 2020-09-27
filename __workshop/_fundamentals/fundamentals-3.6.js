@@ -22,13 +22,13 @@ function calculator(arr) {
   if (typeof arr !== "object" || arr.length !== 3) {
     return undefined;
   }
-  if (typeof arr[0] !== "string") {
+  else if (typeof arr[0] !== "string") {
     return undefined;
   }
-  if (typeof arr[1] !== "number" || typeof arr[2] !== "number") {
+  else if (typeof arr[1] !== "number" || typeof arr[2] !== "number") {
     return undefined;
   }
-  if (arr[0] === "add") {
+  else if (arr[0] === "add") {
     answer = arr[1] + arr[2];
   }
   else if (arr[0] === "sub") {
