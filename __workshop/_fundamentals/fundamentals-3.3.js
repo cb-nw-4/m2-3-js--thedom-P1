@@ -13,7 +13,7 @@ function sum(arr) {
   if (arr.length === 2) {
     return arr.reduce(function(a, b){
       return a + b;
-    }, 0) 
+    }) 
   }
 }
 console.log(sum([1, 3]));
