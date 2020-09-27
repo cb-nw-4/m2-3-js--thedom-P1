@@ -16,6 +16,15 @@
 
 function longestWord(str) {
   // Place solution here
+  let wordArray = str.split(' ')
+
+  let newOrder = wordArray.sort((a,b) => 
+    a.length - b.length);
+  
+    return newOrder[newOrder.length - 1].toString();
+
+  
+  
 }
 
 // Part 2 - Test

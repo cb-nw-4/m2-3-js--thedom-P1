@@ -9,6 +9,12 @@
 
 function sum(arr) {
   // Your code here
+  if (arr.isArray === "false" && typeof arr[' '] !== 'number') {
+    return undefined;
+  } else {
+  let total = 0;
+  for(let i = 0; i < arr.length; total += arr[i++]); 
+  return total; }
 }
 
 // Part 2 - Test

@@ -13,6 +13,18 @@
 
 function repeat(arr) {
   // Your code here
+  if(arr.length !== 2 || typeof arr[0] !== "string" || typeof arr[1] !== "number") {
+    return undefined;
+  }
+  let empty = " ";
+  if(arr[1] <=0) {
+    return empty;
+  } 
+  let count = arr[1]
+
+  let result = arr.shift().repeat(count);
+  return result;
+  
 }
 
 // Part 2 - Test

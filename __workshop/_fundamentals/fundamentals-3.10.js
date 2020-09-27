@@ -9,6 +9,19 @@
 
 function makeIntoTitle(sentence) {
   // Your code here
+
+ let allLower = sentence.toLowerCase();
+
+ let lowerArray = allLower.split(' ');
+
+ let cappedArray = lowerArray.map((item) => {
+   return item = item.charAt(0).toUpperCase() + item.slice(1);
+  });
+  
+ return cappedArray.join(' ');
+
+
+
 }
 
 // Part 2 - Test

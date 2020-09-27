@@ -9,6 +9,10 @@
 
 function firstLetter(str) {
   // Your code here
+  if (typeof str !== "string" || str.length === 0) {
+    return undefined;
+  }
+  return str.substring(0,1);
 }
 
 // Part 2 - Test

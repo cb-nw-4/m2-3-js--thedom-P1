@@ -10,6 +10,10 @@
 
 function lastCharacter(str) {
   // Your code here
+  if (typeof str !== "string" || str.length === 0) {
+    return undefined;
+  }
+  return str.substring(str.length - 1, str.length);
 }
 
 // Part 2 - Test
