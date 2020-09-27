@@ -5,6 +5,9 @@ const longestWord = require("../fundamentals-3.9");
 test("Exercise 9", () => {
   expect(longestWord("a bb ccc dddd e ff ggg")).toBe("dddd");
   // add more tests here...
+  expect(longestWord("a bbbb ccc dddd e ff gggg")).toBe("gggg");
+  expect(longestWord("aaaa bbbb cccc dddd e ff ggg")).toBe("dddd");
+  expect(longestWord("Hello, my name is Aya Sato.")).toBe("Hello,");
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect
