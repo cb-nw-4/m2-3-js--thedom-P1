@@ -6,10 +6,10 @@ test("Exercise 10", () => {
   expect(makeIntoTitle("a bb ccc dddd e ff ggg")).toBe(
     "A Bb Ccc Dddd E Ff Ggg"
   );
-  // add more tests here...
+  expect(makeIntoTitle("one two three")).toBe("One Two Three");
+  expect(makeIntoTitle(" how About THiS oNe?")).toBe(" How About This One?");
+  expect(makeIntoTitle(" ALLCAPS ")).toBe(" Allcaps ");
 });
-expect(makeIntoTitle("one two three")).toBe("One Two Three");
-expect(makeIntoTitle(" how About THiS oNe?")).toBe(" How About This One?");
-expect(makeIntoTitle(" ALLCAPS ")).toBe(" Allcaps ");
+
 
 // More info on jest expect: https://jestjs.io/docs/en/expect
