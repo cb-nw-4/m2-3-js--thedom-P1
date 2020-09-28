@@ -9,7 +9,12 @@
 // - If it's a number, return `undefined`
 
 function lastCharacter(str) {
-  // Your code here
+  if (typeof str !== "string" || str.length === 0) {
+    return undefined;
+  }
+  let array = str.split("");
+  let lastItem = array.slice(-1)[0];
+  return lastItem;
 }
 
 // Part 2 - Test

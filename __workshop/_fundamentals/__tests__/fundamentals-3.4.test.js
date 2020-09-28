@@ -5,6 +5,10 @@ const sum = require("../fundamentals-3.4");
 test("Exercise 4", () => {
   expect(sum([3, 4, 5])).toBe(12);
   // add more tests here...
+  expect(sum([100, 100, "hello"])).toBe(undefined);
+  expect(sum([1, 2, 3, 4])).toBe(10);
+  expect(sum([100])).toBe(100);
+  // expect(sum([NaN, 100])).toBe(undefined);
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect

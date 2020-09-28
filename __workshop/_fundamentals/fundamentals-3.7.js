@@ -12,7 +12,16 @@
 // example: repeat(['foo', 3]) returns 'foofoofoo'
 
 function repeat(arr) {
-  // Your code here
+  if ((typeof arr[0] !== "string") || (typeof arr[1] !== "number")) {
+    return undefined;
+  } else {
+    if (arr[1] <= 0) {
+      return ("");
+    } else {
+      let text = arr[0];
+      return text.repeat(arr[1]);
+    }
+  }
 }
 
 // Part 2 - Test
