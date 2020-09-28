@@ -15,8 +15,32 @@
 //  - `forEach` might be helpful
 
 function longestWord(str) {
-  // Place solution here
+  let words = str.split(" ");
+  let maxWordLength = 0;
+  let word = null;
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > maxWordLength) {
+      maxWordLength = words[i].length;
+      word = words[i];
+    }
+  }
+  return word;
+
+  // var words = str.split(" ");
+  // var longest = 0;
+  // var word = null;
+
+  // words.forEach(function(str) {
+  //       if (longest < str.length) {
+  //           longest = str.length;
+  //           word = str;
+  //       }
+  //   });
+  //   return word;
 }
+
+console.log(longestWord("A decently long string"))
 
 // Part 2 - Test
 // --------------

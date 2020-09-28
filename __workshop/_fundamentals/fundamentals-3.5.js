@@ -14,8 +14,12 @@ function getLetterAtIndex(str, index) {
     return undefined;
   } else {
   array = str.split("");
-  array.forEach(function(element, index) {
-    console.log("index: " + index, element);
+  // array.forEach(function(element, index) {
+  //   console.log(index, element);
+  // })
+
+  array.forEach((element, index) => {
+    console.log(index, element);
   })
   }
 }
