@@ -8,7 +8,18 @@
 // - If the array contains any values that are not a number, the function should return undefined.
 
 function sum(arr) {
-  // Your code here
+  // I add this condition even if it's not asked in the question to avoid the program to crash if we put something else then a array in parameter
+  if (!Array.isArray(arr) || arr.length === 0)
+    return undefined;
+  
+  if (!arr.every(function(num) {return typeof num === "number";})) {
+    return undefined;
+  }
+
+  return arr.reduce(function(a, b){
+    return a+b;
+  });
+
 }
 
 // Part 2 - Test

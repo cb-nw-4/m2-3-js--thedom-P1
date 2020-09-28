@@ -18,7 +18,22 @@
 // calculator(["add", 10, 20]); // 30
 
 function calculator(arr) {
-  // Your code here
+   if (!Array.isArray(arr) || arr.length !== 3 || typeof arr[1] !== "number" || typeof arr[2] !== "number" ) {
+      return undefined;
+   }
+   const operation = arr[0];
+   switch (operation) {
+    case 'add':
+      return arr[1] + arr[2];     
+    case 'sub':
+      return arr[1] - arr[2];  
+    case 'mul':      
+      return arr[1] * arr[2];  
+    case 'div':
+      return arr[1]/arr[2]; 
+    default:
+      return undefined;
+  }
 }
 
 // Part 2 - Test

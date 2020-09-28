@@ -6,7 +6,11 @@
 // For example "hello" would return "olleh" and "how are you" would return "uoy era woh".
 
 function reverseIt(str) {
-  // Your code here
+  // I add this condition even if it's not asked in the question to avoid the program to crash if we put something else then a string
+  if (typeof str !== "string") {
+    return undefined;
+  }
+  return str.split("").reverse().join("");
 }
 
 // Part 2 - Test

@@ -15,7 +15,24 @@
 //  - `forEach` might be helpful
 
 function longestWord(str) {
-  // Place solution here
+  // I add this condition even if it's not asked in the question to avoid the program to crash if we put something else then a string
+  if (typeof str !== "string") {
+    return undefined;
+  }
+
+  if(str.length === 0) {
+    return "";
+  }
+
+  const wordArr = str.split(" ");
+  let longWord = "";
+  wordArr.forEach(word => {
+    if (word.length >= longWord.length) {
+      longWord = word;
+    }    
+  });
+  
+return longWord;
 }
 
 // Part 2 - Test

@@ -8,7 +8,19 @@
 // e.g. f("BACON BROCOLI"); // Bacon Brocoli
 
 function makeIntoTitle(sentence) {
-  // Your code here
+  // I add this condition even if it's not asked in the question to avoid the program to crash if we put something else then a string
+  if (typeof sentence !== "string") {
+    return undefined;
+  }
+
+  let wordArr = sentence.split(" ");
+  wordArr.forEach ((word, i) => {   
+   
+    if (word.length !== 0)
+      wordArr[i] = word.replace(word[0], word[0].toUpperCase());
+  });
+  
+  return wordArr.join(" ");
 }
 
 // Part 2 - Test

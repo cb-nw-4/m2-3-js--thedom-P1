@@ -12,6 +12,11 @@
 
 function sum(arr) {
   // Your code here
+  if (!Array.isArray(arr) || arr.length !== 2 || typeof arr[0] !== "number" || typeof arr[1] !== "number") {
+    return undefined;
+  }
+
+  return arr[0] + arr[1];  
 }
 
 // Part 2 - Test
