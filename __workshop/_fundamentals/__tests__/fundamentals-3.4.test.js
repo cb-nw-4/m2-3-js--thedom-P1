@@ -7,7 +7,7 @@ test("Exercise 4", () => {
   expect(sum([])).toBe(undefined);
   expect(sum([1, "two", 3])).toBe(undefined);
   expect(sum([-1, -1])).toBe(-2);
-  // add more tests here...
+  expect(sum('hello')).toBe(undefined);
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect
