@@ -8,8 +8,21 @@
 // - If the array contains any values that are not a number, the function should return undefined.
 
 function sum(arr) {
-  // Your code here
+  let isAllNumbers = arr.every(function (element) {
+    return typeof element === 'number' && !Number.isNaN(element);
+  });
+
+  if (!isAllNumbers) {
+    return undefined;
+  }
+
+  let result = arr.reduce(function (total, element) {
+    return total + element;
+  });
+
+  return result;
 }
+
 
 // Part 2 - Test
 // --------------

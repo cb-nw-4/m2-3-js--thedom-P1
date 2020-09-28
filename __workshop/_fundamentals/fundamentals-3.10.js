@@ -8,8 +8,14 @@
 // e.g. f("BACON BROCOLI"); // Bacon Brocoli
 
 function makeIntoTitle(sentence) {
-  // Your code here
+  let words = sentence.split(" ");
+  let capitalizedWords = [];
+  words.forEach(element => {
+    capitalizedWords.push(element[0].toUpperCase() + element.slice(1, element.length).toLowerCase());
+  });
+  return capitalizedWords.join(" ");
 }
+
 
 // Part 2 - Test
 // --------------
