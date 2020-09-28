@@ -7,6 +7,7 @@ test("Exercise 3", () => {
   expect(sum([0, -1])).toBe(-1);
   expect(sum([3, 4, 5])).toBe(undefined);
   expect(sum(["not", "a number"])).toBe(undefined);
+  expect(sum(3, 4)).toBe(undefined);
 });
 
 // Run your test by typing yarn test fundamentals-3.3 in the terminal.
