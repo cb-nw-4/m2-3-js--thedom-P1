@@ -10,6 +10,7 @@ test("Exercise 6", () => {
   expect(calculator(["boo", 10, 15])).toBe(undefined);
   expect(calculator(["add", 10])).toBe(undefined);
   expect(calculator(["add", 'ten', 15])).toBe(undefined);
+  expect(calculator("add", 'ten', 15)).toBe(undefined);
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect
