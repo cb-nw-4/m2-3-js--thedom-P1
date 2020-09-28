@@ -8,7 +8,7 @@
 // e.g. f("BACON BROCOLI"); // Bacon Brocoli
 
 function makeIntoTitle(sentence) {
-  // Your code here
+  // I add this condition even if it's not asked in the question to avoid the program to crash if we put something else then a string
   if (typeof sentence !== "string") {
     return undefined;
   }

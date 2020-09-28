@@ -15,6 +15,7 @@
 //  - `forEach` might be helpful
 
 function longestWord(str) {
+  // I add this condition even if it's not asked in the question to avoid the program to crash if we put something else then a string
   if (typeof str !== "string") {
     return undefined;
   }
