@@ -8,7 +8,10 @@
 // e.g. f("BACON BROCOLI"); // Bacon Brocoli
 
 function makeIntoTitle(sentence) {
-  // Your code here
+  lowerString = sentence.toLowerCase();
+
+  // Got to love regex
+  return lowerString.replace(/\b\w/g, char => char.toUpperCase());
 }
 
 // Part 2 - Test
