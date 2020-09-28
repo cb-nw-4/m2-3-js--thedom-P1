@@ -12,8 +12,10 @@
 // example: repeat(['foo', 3]) returns 'foofoofoo'
 
 function repeat(arr) {
-  // Your code here
+  return arr[0];
 }
+
+console.log(repeat(["foo", 3]))
 
 // Part 2 - Test
 // --------------
