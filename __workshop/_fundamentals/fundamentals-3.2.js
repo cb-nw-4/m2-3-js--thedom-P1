@@ -10,7 +10,23 @@
 
 function lastCharacter(str) {
   // Your code here
+  if (typeof(str) == "number") {
+    return undefined;
+  }
+  
+  array = str.split("")
+  if (array === "") {
+    return undefined;
+  } else {
+  return array[array.length -1]
+  }
 }
+
+console.log(lastCharacter("Gia"));
+console.log(lastCharacter("bootcamp"));
+console.log(lastCharacter(""));
+console.log(lastCharacter(256));
+
 
 // Part 2 - Test
 // --------------

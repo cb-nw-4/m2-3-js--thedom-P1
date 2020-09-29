@@ -9,10 +9,15 @@
 //
 // HINT: You can use the typeof function to check the type of each element:
 // `typeof 3` returns 'number'
-
 function sum(arr) {
-  // Your code here
+  if (arr.length === 2) {
+    return arr.reduce(function(a, b){
+      return a + b;
+    }) 
+  }
 }
+console.log(sum([1, 3]));
+console.log(sum([1, 3, 6]));
 
 // Part 2 - Test
 // --------------

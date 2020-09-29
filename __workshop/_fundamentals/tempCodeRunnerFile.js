@@ -1,0 +1,2 @@
+
+  array = str.split("");

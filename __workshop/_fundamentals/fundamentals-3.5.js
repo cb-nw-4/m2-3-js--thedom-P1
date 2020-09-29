@@ -10,8 +10,21 @@
 // - If there is no letter in the provided index, return undefined.
 
 function getLetterAtIndex(str, index) {
-  // Your code here
+  array = str.split("");
+  if (typeof str !== "string" || str.length === 0) {
+    return undefined;
+  } else if (array.length < index){
+  return undefined;
+  } else {
+    // array = str.split("");
+  return array[index];
+  }
 }
+
+console.log(getLetterAtIndex("OkayWord", 10));
+console.log(getLetterAtIndex("OkayWord", 5));
+console.log(getLetterAtIndex("OkayWord", 5));
+
 
 // Part 2 - Test
 // --------------

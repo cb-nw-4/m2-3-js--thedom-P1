@@ -18,8 +18,29 @@
 // calculator(["add", 10, 20]); // 30
 
 function calculator(arr) {
-  // Your code here
+  num1 = arr[1];
+  num2 = arr[2];
+  if (arr[0] === "add") {
+    return num1 + num2;
+  } else if (arr[0] === "sub") {
+    return num1 - num2;
+  }else if (arr[0] === "mul") {
+    return num1 * num2;
+  }else if (arr[0] === "div") {
+    return num1/num2;
+  } else if (typeof(num1) !== "number" || typeof(num2) !== "number") {
+    return undefined;
+  } else {
+    return undefined;
+  }
 }
+
+console.log(calculator(["add", 20, 30]));
+console.log(calculator(["sub", 20, 30]));
+console.log(calculator(["mul", 20, 30]));
+console.log(calculator(["div", 20, 30]));
+
+
 
 // Part 2 - Test
 // --------------

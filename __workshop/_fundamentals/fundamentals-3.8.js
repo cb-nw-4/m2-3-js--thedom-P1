@@ -7,7 +7,14 @@
 
 function reverseIt(str) {
   // Your code here
+  let reversed = "";
+  for (let i = str.length -1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
 }
+
+console.log(reverseIt("how are you"));
 
 // Part 2 - Test
 // --------------
