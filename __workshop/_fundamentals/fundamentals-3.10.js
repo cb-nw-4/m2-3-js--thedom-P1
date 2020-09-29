@@ -9,6 +9,12 @@
 
 function makeIntoTitle(sentence) {
   // Your code here
+  let newstr=new Array;
+  let strarr=sentence.split(" ");
+  for(let i=0; i<strarr.length; i++){
+    newstr[i]=strarr[i].charAt(0).toUpperCase()+strarr[i].substring(1).toLowerCase();
+  }
+return newstr.join(" ");
 }
 
 // Part 2 - Test

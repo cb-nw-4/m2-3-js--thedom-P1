@@ -9,6 +9,16 @@
 
 function sum(arr) {
   // Your code here
+  let c=0;
+  for (let i=0; i<arr.length; i++){
+    if(typeof arr[i]==="string"){
+      return undefined;
+    }
+    else{
+      c=c+arr[i];
+    }
+  }
+  return c;
 }
 
 // Part 2 - Test

@@ -5,6 +5,9 @@ const sum = require("../fundamentals-3.3");
 test("Exercise 3", () => {
   expect(sum([3, 4])).toBe(7);
   // add more tests here...
+  expect(sum([9, 15])).toBe(24);
+  expect(sum([50, -100])).toBe(-50);
+  expect(sum([50, -100, 56])).toBe(undefined);
 });
 
 // Run your test by typing yarn test fundamentals-3.3 in the terminal.

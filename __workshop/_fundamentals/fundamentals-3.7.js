@@ -13,6 +13,22 @@
 
 function repeat(arr) {
   // Your code here
+  if(typeof arr!=="object" || 
+  typeof arr[0]!=="string" ||
+  typeof arr[1]!=="number" || 
+  arr.length<2){
+    return undefined;
+  }
+  else if(arr[1]<=0){
+    return [];
+  }
+  else{
+    let str='';
+    let t=arr[1];
+    for(let i=0; i<arr[1]; i++){
+      str+=arr[0];
+  }
+  return str;}
 }
 
 // Part 2 - Test

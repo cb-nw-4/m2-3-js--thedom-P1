@@ -11,6 +11,13 @@
 
 function getLetterAtIndex(str, index) {
   // Your code here
+  let arr=str.split('');
+  if( isNaN(arr[index-1])===false || typeof str==="string"){
+  return undefined;
+  }
+  else{
+    return arr[index-1];
+  }
 }
 
 // Part 2 - Test

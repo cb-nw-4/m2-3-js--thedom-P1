@@ -9,6 +9,15 @@
 
 function firstLetter(str) {
   // Your code here
+  let arr=str.split('');
+
+  if (arr.length === 0) {
+    return undefined;
+  }
+  else {
+    return arr[0];
+  }
+  
 }
 
 // Part 2 - Test
