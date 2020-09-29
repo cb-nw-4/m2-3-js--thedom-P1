@@ -12,18 +12,24 @@
 // example: repeat(['foo', 3]) returns 'foofoofoo'
 
 function repeat(arr) {
+  str = arr[0];
+  num = arr[1];
   if (typeof(arr[0]) === "string" && typeof(arr[1] === "number")) {
-  string = arr[0].repeat(arr[1]);
-  return string.toString();
-} else if (arr[1] <= 0) {
+  let array = [];
+  for ( var i = 0; i < num; i++) {
+    array.push(str);
+  }
+  return array.join("");
+} else if (typeof(str) === "string" && num <= 0) {
   return ""
 } else {
   return undefined;
 }
 }
 
-console.log(repeat(["foo", 3]))
-console.log(repeat(["foo", -3]))
+console.log(repeat(["foo", 3]));
+console.log(repeat(["foo", -3]));
+console.log(repeat([3, "foo"]));
 
 
 // Part 2 - Test
