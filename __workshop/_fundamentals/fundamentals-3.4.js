@@ -8,7 +8,11 @@
 // - If the array contains any values that are not a number, the function should return undefined.
 
 function sum(arr) {
-  // Your code here
+  if (typeof(arr) !== 'object' || arr.length === 0 || !arr.every((x) => typeof(x) === 'number')) {
+    return undefined;
+  }
+
+  return arr.reduce((sum, curVal) => sum + curVal);
 }
 
 // Part 2 - Test

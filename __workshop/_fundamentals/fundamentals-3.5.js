@@ -10,7 +10,11 @@
 // - If there is no letter in the provided index, return undefined.
 
 function getLetterAtIndex(str, index) {
-  // Your code here
+  if (typeof(str) !== 'string' || !str.charAt(index).match(/[a-z]/i)) {
+    return undefined;
+  }
+
+  return str.charAt(index);
 }
 
 // Part 2 - Test
