@@ -42,6 +42,7 @@ document.querySelector('main').appendChild(mainP4);
 // ADD A HREF
 let mainHREF = document.createElement('a');
 mainHREF.href = 'https://himym2017.wordpress.com/2017/03/25/the-best-himym-episode-according-to-fans/'
+mainHREF.innerText = 'Source';
 document.querySelector('main').appendChild(mainHREF);
 
 // DOCUMENT CSS

@@ -10,22 +10,21 @@
 // - If there is no letter in the provided index, return undefined.
 
 function getLetterAtIndex(str, index) {
+  array = str.split("");
   if (typeof str !== "string" || str.length === 0) {
     return undefined;
+  } else if (array.length < index){
+  return undefined;
   } else {
-  array = str.split("");
-  // array.forEach(function(element, index) {
-  //   console.log(index, element);
-  // })
-
-  array.forEach((element, index) => {
-    console.log(index, element);
-  })
+    // array = str.split("");
+  return array[index];
   }
 }
 
-console.log(getLetterAtIndex("OkayWord"));
-console.log(getLetterAtIndex(21))
+console.log(getLetterAtIndex("OkayWord", 10));
+console.log(getLetterAtIndex("OkayWord", 5));
+console.log(getLetterAtIndex("OkayWord", 5));
+
 
 // Part 2 - Test
 // --------------
