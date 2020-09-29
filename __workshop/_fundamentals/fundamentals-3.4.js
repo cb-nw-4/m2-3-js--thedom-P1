@@ -9,7 +9,17 @@
 
 function sum(arr) {
   // Your code here
-}
+  for (num = 0; num < arr.length; num++) {
+    if (typeof arr[num] !== "number") {
+    return undefined; 
+    }
+  } 
+   return arr.reduce((accumulator, currentValue) =>  accumulator + currentValue);
+  }
+
+
+
+
 
 // Part 2 - Test
 // --------------

@@ -15,7 +15,12 @@
 //  - `forEach` might be helpful
 
 function longestWord(str) {
-  // Place solution here
+  
+  if (str === "") {
+    return "";
+  }
+  return str.split(" ").reduce((word1, word2) => word1.length <= word2.length ? word2 : word1);
+
 }
 
 // Part 2 - Test

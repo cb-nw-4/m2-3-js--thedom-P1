@@ -6,6 +6,9 @@ test("Exercise 1", function () {
   expect(firstLetter("max")).toBe("m");
   expect(firstLetter("")).toBe(undefined);
   // add more tests here...
+  expect(firstLetter("Hedwig")).toBe("H");
+  expect(firstLetter(" hi")).toBe(" ");
+  expect(firstLetter("123")).toBe("1");
 });
 
 // Run your test by typing yarn test fundamentals-3.1 in the terminal.

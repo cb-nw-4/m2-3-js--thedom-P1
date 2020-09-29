@@ -5,6 +5,9 @@ const getLetterAtIndex = require("../fundamentals-3.5");
 test("Exercise 5", () => {
   expect(getLetterAtIndex("bacon", 2)).toBe("c");
   // add more tests here...
+  expect(getLetterAtIndex("Hi there", 2)).toBe(undefined);
+  expect(getLetterAtIndex("Goodbye", 7)).toBe(undefined);
+  expect(getLetterAtIndex("LeviOsa", 4)).toBe("O");
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect
