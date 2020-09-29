@@ -30,17 +30,13 @@ function sum(arr) {
   //   }
   //   return summ;
   // }
+  let summ = 0;
   
-  let sum1 = 0;
-
-  for (var i = 0; i < arr.length; i++) {
-    if (arr.every(function(element) {
-      typeof element === "number";
-    })) {
-      let sum1 = 0;
-      sum1 += arr[i];
+  if (arr.every(element => typeof element === "number")) {
+    for (var i = 0; i < arr.length; i++) {
+      summ += arr[i];
     }
-    return sum1;
+    return summ;
   }
 }
 

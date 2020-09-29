@@ -12,10 +12,19 @@
 // example: repeat(['foo', 3]) returns 'foofoofoo'
 
 function repeat(arr) {
-  return arr[0];
+  if (typeof(arr[0]) === "string" && typeof(arr[1] === "number")) {
+  string = arr[0].repeat(arr[1]);
+  return string.toString();
+} else if (arr[1] <= 0) {
+  return ""
+} else {
+  return undefined;
+}
 }
 
 console.log(repeat(["foo", 3]))
+console.log(repeat(["foo", -3]))
+
 
 // Part 2 - Test
 // --------------
