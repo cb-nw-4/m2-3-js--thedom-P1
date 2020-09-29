@@ -7,8 +7,14 @@
 
 function reverseIt(str) {
   // Your code here
+  let splitStr = str.split("");
+  let reversed = splitStr.reverse("");
+  let reverseStr = reversed.join("");
+  return reverseStr; 
 }
-
+console.log(reverseIt("ti esrever dna ti pilF"))
+console.log(reverseIt("ti rehpiced ot evah uoy dna edoc terces a si sihT"))
+console.log(reverseIt("SDRAWKCAB DNA SDRAWROF"))
 // Part 2 - Test
 // --------------
 // Test your function.

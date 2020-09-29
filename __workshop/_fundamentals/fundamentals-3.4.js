@@ -9,8 +9,20 @@
 
 function sum(arr) {
   // Your code here
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] == "number") {
+      sum += arr[i];
+    } else {
+      return undefined;
+    }
+  }
+  return sum;
 }
-
+console.log(sum([8, 20, 5, 10, 50]))
+console.log(sum([20, "fifteen", 15, 13]))
+console.log(sum([10, 10, 450]))
+console.log(sum(["this", "is", "a", "test"]))
 // Part 2 - Test
 // --------------
 // Test your function.

@@ -11,8 +11,16 @@
 
 function getLetterAtIndex(str, index) {
   // Your code here
+  if (typeof str !== "string" || str.charAt(index) === -1) {
+    return undefined
+  } else {
+    return str.charAt(index);
+  }
 }
-
+console.log(getLetterAtIndex("bacon", 2))
+console.log(getLetterAtIndex("This is a string", 5))
+console.log(getLetterAtIndex(["this", "is", "a", "test"], 3))
+console.log(getLetterAtIndex("Weekends are the best", 7))
 // Part 2 - Test
 // --------------
 // Test your function.

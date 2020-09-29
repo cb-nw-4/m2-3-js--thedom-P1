@@ -19,7 +19,28 @@
 
 function calculator(arr) {
   // Your code here
-}
+  let add, sub, mul, div;
+  if (arr.length > 3) {
+    return undefined;
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[0] === "add") {
+return add = arr[1] + arr[2];
+    } else if (arr[0] === "sub") {
+      return sub = arr[1] - arr[2];
+    } else if (arr[0] === "mul") {
+      return mul = arr[1] * arr[2];
+    } else if (arr[0] === "div") {
+      return div = arr[1] / arr[2]
+    } else {
+      return undefined;
+    }
+    }
+  }
+  console.log(calculator(["mul", 10, 15]))
+  console.log(calculator(["div", 200, 40]))
+  console.log(calculator(["square", 150, 10]))
+  console.log(calculator(["sub", 250, 50]))
 
 // Part 2 - Test
 // --------------

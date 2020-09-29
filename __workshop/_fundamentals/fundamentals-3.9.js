@@ -16,8 +16,21 @@
 
 function longestWord(str) {
   // Place solution here
+  if (str.length === 0) {
+    return str;
+  } else {
+    let array = str.split(" ");
+    let sortedArray = array.sort(function (longer, shorter) {
+      return shorter.length - longer.length;
+    });
+    let longestWord = sortedArray[0];
+    return longestWord;
+  }
 }
-
+console.log(longestWord("a bb ccc dddd e ff ggg"));
+console.log(longestWord("What is the longest word?"));
+console.log(longestWord(""));
+console.log(longestWord("It feels like a hot summer day"));
 // Part 2 - Test
 // --------------
 // Test your function.

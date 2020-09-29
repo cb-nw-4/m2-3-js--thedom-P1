@@ -10,7 +10,14 @@
 
 function lastCharacter(str) {
   // Your code here
+  if (typeof str == "number" || str.length === 0) {
+    return undefined;
+  } else {
+    return str.charAt(str.length - 1);
+  }
 }
+
+console.log(lastCharacter("Once upon a time"))
 
 // Part 2 - Test
 // --------------
