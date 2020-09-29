@@ -7,6 +7,10 @@
 
 function reverseIt(str) {
   // Your code here
+  let newstr=str.split('');
+  let reversestr=newstr.reverse();
+  let correctstr=reversestr.join('');
+  return correctstr;
 }
 
 // Part 2 - Test
