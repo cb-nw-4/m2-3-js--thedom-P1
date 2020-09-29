@@ -5,6 +5,9 @@ const strLength = require("../fundamentals-3.0");
 test("Exercise 0", function () {
   expect(strLength("max")).toBe(3);
   // add more tests here...
+  expect(strLength("A jest")).toBe(6);
+  expect(strLength(3412)).toBe(undefined);
+  expect(strLength("A sentence.")).toBe(11);
   expect(strLength("abcdefghijklmnop")).toBe(16);
   expect(strLength("This is a test case.")).toBe(20);
   expect(strLength("")).toBe(undefined);

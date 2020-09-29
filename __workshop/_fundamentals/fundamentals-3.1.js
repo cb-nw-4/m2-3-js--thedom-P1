@@ -8,7 +8,11 @@
 // - If it's an empty string (''), return undefined.
 
 function firstLetter(str) {
-  // Your code here
+  let instring = str;
+  if(instring.length!=0){
+    return instring.charAt(0);
+  }
+  return undefined;
 }
 
 // Part 2 - Test

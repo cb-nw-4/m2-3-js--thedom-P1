@@ -9,6 +9,16 @@
 
 function sum(arr) {
   // Your code here
+  let isAllNumbers = arr.every(function(element){
+    return typeof element == "number";
+  });
+
+  if(isAllNumbers && arr.length!=0){
+    return arr.reduce(function(a,b){
+      return a+b;
+    });
+  }
+  return undefined;
 }
 
 // Part 2 - Test

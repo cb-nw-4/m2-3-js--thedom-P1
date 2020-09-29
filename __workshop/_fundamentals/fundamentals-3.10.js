@@ -8,7 +8,21 @@
 // e.g. f("BACON BROCOLI"); // Bacon Brocoli
 
 function makeIntoTitle(sentence) {
-  // Your code here
+
+  let inArray = sentence.split(" ");
+  let tempWord = "";
+  let capWordsArray = [];
+  let capSentence = "";
+
+  inArray.forEach(word => {
+    tempWord = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    capWordsArray.push(tempWord);
+  });
+
+  capSentence = capWordsArray.reduce(function(a,b){
+    return a + ' ' + b;}).slice(0);
+
+return capSentence;
 }
 
 // Part 2 - Test
