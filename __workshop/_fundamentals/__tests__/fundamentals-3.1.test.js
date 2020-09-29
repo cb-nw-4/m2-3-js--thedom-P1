@@ -4,6 +4,8 @@ const firstLetter = require("../fundamentals-3.1");
 // Write 3 more expect functions to test the function you just wrote.
 test("Exercise 1", function () {
   expect(firstLetter("max")).toBe("m");
+  expect(firstLetter("MisterMarshmallow")).toBe("M");
+  expect(firstLetter("M st rM rsh al ow")).toBe("M");
   expect(firstLetter("")).toBe(undefined);
   // add more tests here...
 });

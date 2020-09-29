@@ -6,6 +6,16 @@ test("Exercise 10", () => {
   expect(makeIntoTitle("a bb ccc dddd e ff ggg")).toBe(
     "A Bb Ccc Dddd E Ff Ggg"
   );
+  expect(makeIntoTitle("A BB CCC DDDD E FF GGG")).toBe(
+    "A Bb Ccc Dddd E Ff Ggg"
+  );
+  expect(makeIntoTitle("hello world")).toBe(
+    "Hello World"
+  );
+  expect(makeIntoTitle("BACON BROCOLI")).toBe(
+    "Bacon Brocoli"
+  );
+  
   // add more tests here...
 });
 
