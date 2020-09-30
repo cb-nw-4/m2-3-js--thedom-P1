@@ -16,6 +16,14 @@
 
 function longestWord(str) {
   // Place solution here
+  let words = str.split(' ');
+  let lenghts = [];
+  if (typeof str =="string" && str.length > 0){
+    words.forEach(i => {lenghts.push(i.length)});
+    let max = lenghts.reduce(function(a,b){return Math.max(a,b)});
+    return words[lenghts.lastIndexOf(max)];
+  }
+  return words[0];
 }
 
 // Part 2 - Test

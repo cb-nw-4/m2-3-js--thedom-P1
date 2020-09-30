@@ -9,6 +9,15 @@
 
 function makeIntoTitle(sentence) {
   // Your code here
+  let arr = sentence.split(' ');
+  let word = "";
+  let capArr = [];
+  arr.forEach(i => {
+    word = i.charAt(0).toUpperCase() + i.substring(1).toLowerCase();
+    capArr.push(word);
+  });
+  let capStr = capArr.join(' ');
+  return capStr;
 }
 
 // Part 2 - Test

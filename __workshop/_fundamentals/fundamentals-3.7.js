@@ -13,6 +13,11 @@
 
 function repeat(arr) {
   // Your code here
+  if (typeof arr[0]!== 'string' || arr.length > 2) {
+    return undefined;
+  } 
+  let str = arr[0];
+  return str.repeat(arr[1]);
 }
 
 // Part 2 - Test
