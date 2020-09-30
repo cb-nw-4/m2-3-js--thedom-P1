@@ -45,14 +45,8 @@ You'll need to make extensive use of `document.createElement`!
 
 ---
 
-<center>🟡 - Minimally complete workshop (75%) - 🟡</center>
-
----
-
-## Exercise 2
-
----
-
 <center>🟢 - Complete workshop (100%) - 🟢</center>
 
 ---
+
+
