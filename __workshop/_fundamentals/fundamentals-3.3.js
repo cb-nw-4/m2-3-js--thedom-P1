@@ -12,6 +12,10 @@
 
 function sum(arr) {
   // Your code here
+  if (typeof arr[0]!== 'number' || typeof arr[1]!== 'number' || arr.length !== 2) {
+    return undefined;
+  }
+  return arr.reduce((a, b) => a + b, 0);
 }
 
 // Part 2 - Test

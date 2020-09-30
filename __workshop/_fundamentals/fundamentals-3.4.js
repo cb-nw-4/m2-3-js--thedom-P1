@@ -9,6 +9,12 @@
 
 function sum(arr) {
   // Your code here
+  for (let i=0; i<arr.length ; i++) {
+    if (typeof arr[i]!== 'number') {
+    return undefined;
+    }
+  }
+  return arr.reduce((a, b) => a + b, 0);
 }
 
 // Part 2 - Test

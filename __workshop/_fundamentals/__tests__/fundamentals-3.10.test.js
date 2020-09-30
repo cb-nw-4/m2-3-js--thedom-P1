@@ -7,6 +7,9 @@ test("Exercise 10", () => {
     "A Bb Ccc Dddd E Ff Ggg"
   );
   // add more tests here...
+  expect(makeIntoTitle("We import")).toBe("We Import");
+  expect(makeIntoTitle("functions to test")).toBe("Functions To Test");
+  expect(makeIntoTitle("The function above is actually an anonymous function ")).toBe("The Function Above Is Actually An Anonymous Function ");
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect
