@@ -10,7 +10,13 @@
 // - If there is no letter in the provided index, return undefined.
 
 function getLetterAtIndex(str, index) {
-  // Your code here
+  let allLetters = /^[A-Za-z]+$/;
+
+  if(typeof str == "string" && str[index].match(allLetters)!=null){
+    return str[index];
+  }
+  
+  return undefined;
 }
 
 // Part 2 - Test

@@ -15,7 +15,22 @@
 //  - `forEach` might be helpful
 
 function longestWord(str) {
-  // Place solution here
+  let words = str.split(' ');
+  let arrayOfLengths=[];
+
+  if(typeof str =="string" && str.length > 0){
+    words.forEach(element => {
+      arrayOfLengths.push(element.length);
+    });
+
+    let maxLength = arrayOfLengths.reduce(function(a,b){
+      return Math.max(a,b);
+    });
+
+    return words[arrayOfLengths.lastIndexOf(maxLength)];
+  }
+
+  return words[0]; // empty string
 }
 
 // Part 2 - Test
