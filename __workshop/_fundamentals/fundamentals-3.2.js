@@ -9,8 +9,16 @@
 // - If it's a number, return `undefined`
 
 function lastCharacter(str) {
-  // Your code here
+  let inString = str;
+  let lastChar = undefined;
+
+  if(str.length-1 >0 ){
+    lastChar = inString.charAt(inString.length-1);
+  }
+
+  return lastChar;
 }
+
 
 // Part 2 - Test
 // --------------

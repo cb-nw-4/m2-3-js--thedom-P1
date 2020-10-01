@@ -18,7 +18,14 @@
 // calculator(["add", 10, 20]); // 30
 
 function calculator(arr) {
-  // Your code here
+  if(Array.isArray(arr) && typeof arr[1]=="number" && typeof arr[2]=="number"){
+    
+    if(arr[0] == "add"){ return arr[1]+arr[2];}
+    if(arr[0] == "sub"){ return arr[1]-arr[2];}
+    if(arr[0] == "mul"){ return arr[1]*arr[2];}
+    if(arr[0] == "div"){ return arr[1]/arr[2];}
+  }
+  return undefined;
 }
 
 // Part 2 - Test
