@@ -8,8 +8,19 @@
 // - If the array contains any values that are not a number, the function should return undefined.
 
 function sum(arr) {
-  // Your code here
+  let isvalid = arr.every((element) =>  { return typeof element === "number"}) 
+    if (isvalid === false) {
+    return undefined; }
+  else {
+  let sumofnumber = arr.reduce((total, current)=>{
+    return total + current;
+  },0)
+  return sumofnumber;
 }
+  
+  
+}
+
 
 // Part 2 - Test
 // --------------
