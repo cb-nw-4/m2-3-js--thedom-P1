@@ -21,5 +21,9 @@ function strLength(str) {
 // Look for the corresponding exercise file in the __tests__ folder.
 // Add some test cases in the test. The first one is done for you.
 
+str = "this is a test string"
+
+console.log(strLength(str))
+
 // We need to export the function in order for our unit test to have access to it.
 module.exports = strLength;
