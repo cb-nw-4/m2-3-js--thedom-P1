@@ -9,6 +9,8 @@
 
 function sum(arr) {
   // Your code here
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  return arr.reduce(reducer)
 }
 
 // Part 2 - Test
