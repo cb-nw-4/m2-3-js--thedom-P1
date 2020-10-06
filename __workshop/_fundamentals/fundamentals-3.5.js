@@ -11,6 +11,8 @@
 
 function getLetterAtIndex(str, index) {
   // Your code here
+
+  return str.slice(index, index+1)
 }
 
 // Part 2 - Test

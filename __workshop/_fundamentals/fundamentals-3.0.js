@@ -9,6 +9,8 @@
 
 function strLength(str) {
   // Your code here
+  console.log(str.length, "hello")
+  console.log(strLength)
   if (typeof str !== "string" || str.length === 0) {
     return undefined;
   }
