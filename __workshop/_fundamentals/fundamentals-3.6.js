@@ -18,6 +18,17 @@
 // calculator(["add", 10, 20]); // 30
 
 function calculator(arr) {
+  if (arr[0] === "add"){
+return arr[1]+ arr[2]
+  }else if (arr[0] === "sub"){
+    return arr[1]- arr[2]
+  }else if (arr[0] === "mul"){
+    return arr[1] * arr[2]
+  } else if (arr[0] === "div"){
+    return arr[1]/arr[2]
+  }else{
+    return undefined
+  }
   // Your code here
 }
 

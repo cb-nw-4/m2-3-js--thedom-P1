@@ -14,9 +14,24 @@
 //  - You'll need to use the split string method
 //  - `forEach` might be helpful
 
-function longestWord(str) {
-  // Place solution here
+function longestWord (str){
+  const words = str.split(" ") // This break it up into an array of seperate strings ["hey", "hello", "morning"]
+  let longestWord = ''
+  
+  words.forEach (function(word){ // word = morning
+    if (word.length > longestWord.length){ // 7 > 5
+      longestWord = word; // longest word = morning
+    
+    }
+  
+  })
+return longestWord
+
 }
+
+const output = longestWord('hey hello morning'); // output = 'morning'
+
+console.log('output',output); 
 
 // Part 2 - Test
 // --------------

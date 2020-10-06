@@ -11,9 +11,34 @@
 //
 // example: repeat(['foo', 3]) returns 'foofoofoo'
 
-function repeat(arr) {
-  // Your code here
+
+function repeat (arr){
+  let repeatedWord = '';
+  let numOfRep = arr[1]
+  let word = arr[0]
+  for (let i=0; i<numOfRep; i++){
+    repeatedWord = word + repeatedWord;
+  }
+  return repeatedWord;
 }
+
+
+console.log(repeat(['foo', 3]))
+
+// // const repeatedWord = arr[0].repeat(arr[1])
+// // return repeatedWord
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Part 2 - Test
 // --------------
