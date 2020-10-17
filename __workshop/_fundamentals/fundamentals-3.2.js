@@ -8,8 +8,12 @@
 // - If it's an empty string, return `undefined`
 // - If it's a number, return `undefined`
 
-function lastCharacter(str) {
-  // Your code here
+function lastCharacter(str){
+  if(str === "" || typeof str === 'number'){
+    return undefined
+  } else {
+    return (str.charAt(str.length-1))
+  }
 }
 
 // Part 2 - Test
