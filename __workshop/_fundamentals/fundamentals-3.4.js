@@ -7,8 +7,19 @@
 //
 // - If the array contains any values that are not a number, the function should return undefined.
 
-function sum(arr) {
-  // Your code here
+function sum(arr){
+  let answer = arr.reduce(function(accumulator, value){
+  return accumulator + value
+  })
+  let arrayChecker = arr.every(function(e){
+  return (typeof e === 'number')
+  })
+
+  if(arrayChecker === true){
+    return answer
+  } else {
+    return undefined
+  }
 }
 
 // Part 2 - Test

@@ -9,8 +9,14 @@
 // - If the string is not a string, return undefined.
 // - If there is no letter in the provided index, return undefined.
 
-function getLetterAtIndex(str, index) {
-  // Your code here
+function getLetterAtIndex(str, index){
+  // strIntoArray = str.split("")
+  
+  if (typeof str === "string"){
+    return str.split("")[index]
+  } else {
+    return undefined
+  }
 }
 
 // Part 2 - Test
