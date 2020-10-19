@@ -17,8 +17,20 @@
 // For example:
 // calculator(["add", 10, 20]); // 30
 
-function calculator(arr) {
-  // Your code here
+function calculator(arr){
+  if (typeof arr === 'object' && arr.length === 3 && arr[0] === "add" && typeof arr[1] === 'number' && typeof arr[2] === 'number'){
+      return arr[1] + arr[2]
+  } else if (
+    typeof arr === 'object' && arr.length === 3 && arr[0] === "sub" && typeof arr[1] === 'number' && typeof arr[2] === 'number'){
+      return arr[1] - arr[2]
+    } else if (
+    typeof arr === 'object' && arr.length === 3 && arr[0] === "div" && typeof arr[1] === 'number' && typeof arr[2] === 'number'){
+      return arr[1] / arr[2]
+    } else if (typeof arr === 'object' && arr.length === 3 && arr[0] === "mul"&& typeof arr[1] === 'number' && typeof arr[2] === 'number'){
+      return arr[1] * arr[2]
+    } else {
+      return undefined
+    }
 }
 
 // Part 2 - Test
